@@ -18,7 +18,7 @@ void main()
 				i = i + shiftno - 1;
 			}
 			else
-				i=i+shiftno;
+				i+=shiftno;
 	else
 		for (char& i : msg)
 			if (i == 'a')
@@ -27,6 +27,6 @@ void main()
 				i = i - shiftno + 1;
 			}
 			else
-				i=i-shiftno;
+				i-=shiftno;
 	cout << "The " << encdec << "d message is " << msg;
 }
