@@ -67,6 +67,20 @@ void initmorse()
     n["-.--"] = 'y';
     n["--.."] = 'z';
 }
+void loadingscreen()
+{
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j <=2; j++)
+        {
+            cout << "Loading";
+            for (int k = 0; k<=j ; k++)
+                cout << ".";
+            Sleep(250);
+            system("cls");
+        }
+    }
+}
 void texttomorse(const string& a)
 {
     string t;
@@ -109,6 +123,7 @@ void morsetotext(const string& p)
 }
 int main()
 {
+    loadingscreen();
     initmorse();
     int choice;
     while (1)
